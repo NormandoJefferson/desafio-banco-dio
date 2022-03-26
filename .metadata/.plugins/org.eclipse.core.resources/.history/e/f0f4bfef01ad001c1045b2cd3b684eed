@@ -1,0 +1,27 @@
+package aplicacao;
+
+import entidades.Cliente;
+import entidades.Conta;
+import entidades.ContaCorrente;
+import entidades.ContaPoupanca;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Cliente c1 = new Cliente("Gepeto", "123.421.145-75");
+		Cliente c2 = new Cliente("Muricio", "123.421.145-75"));
+		Cliente c3 = new Cliente("Benedito", "123.421.145-75"));
+		
+		Conta cc = new ContaCorrente(c1);
+		Conta cc2 = new ContaCorrente(c2);
+		cc.depositar(100);
+		Conta poupanca = new ContaPoupanca(c3);
+		cc.transferir(60, poupanca);
+		
+		cc.imprimirExtrato();
+		poupanca.imprimirExtrato();
+		cc2.imprimirExtrato();
+	}
+	
+}

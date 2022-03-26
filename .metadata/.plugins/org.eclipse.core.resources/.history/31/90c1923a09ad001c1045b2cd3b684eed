@@ -1,0 +1,34 @@
+package aplicacao;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entidades.Cliente;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o número de clientes do banco DIO:");
+		int n = sc.nextInt();
+		
+		List<Cliente> clientes = new ArrayList<>();
+		
+		for(int i = 0; i < n; i++) {
+			System.out.println("Dados do cliente " + (i + 1) + ":");
+			System.out.print("Nome: ");
+			sc.nextLine();
+			String nome = sc.nextLine();
+			System.out.print("CPF: ");
+			String cpf = sc.nextLine();
+			clientes.add(new Cliente(nome, cpf));
+		}
+		
+		sc.close();
+		
+	}
+	
+}

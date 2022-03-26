@@ -1,0 +1,15 @@
+package entidades;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class Cliente {
+	
+	protected String name;
+
+	public Cliente(String name) {
+		this.name = name;
+	}
+}

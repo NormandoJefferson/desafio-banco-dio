@@ -1,0 +1,15 @@
+package aplicacao;
+
+import entidades.Cliente;
+import entidades.Conta;
+import entidades.ContaCorrente;
+import entidades.ContaPoupanca;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		
+	}
+	
+}

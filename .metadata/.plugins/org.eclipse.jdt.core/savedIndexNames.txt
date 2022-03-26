@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\norma\OneDrive\Projetos\Projetos Java\eclipse\dio-proj\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2422301837.index
+340333919.index
